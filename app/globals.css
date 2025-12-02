@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+	--background: #fff;
+	--foreground: #f6f5f1;
+	--paragraph-text: #395852;
+	--neutral-900: #163a34;
+	--neutral-200: #e0e6e3;
+	--neutral-100: #fff;
+	--teal-500: #49ac9b;
+	--indigo-500: #697ddb;
+	--orange-500: #fe9f6b;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-nunito_sans);
+	--font-mono: var(--font-nunito);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
+}
+
+body {
+	background: var(--background);
+	font-family: var(--font-sans), var(--font-mono), sans-serif;
+	max-width: 1024px;
+	margin: auto;
+}
+.text-preset-1 {
+	font-weight: bolder;
+	line-height: 110%;
+	letter-spacing: -2px;
+	font-size: 45px;
+}
+.text-preset-2 {
+	font-weight: 900;
+	line-height: 120%;
+	letter-spacing: -2px;
+	font-size: 35px;
+}
+.text-preset-2-mobile {
+	font-weight: 900;
+	line-height: 120%;
+	letter-spacing: -2px;
+	font-size: 30px;
+}
+.text-preset-3 {
+	font-weight: bold;
+	line-height: 130%;
+	letter-spacing: -1px;
+	font-size: 32px;
+}
+
+.text-preset-4 {
+	font-weight: medium;
+	line-height: 150%;
+	letter-spacing: -0.4px;
+	font-size: 16px;
+}
+.text-preset-5 {
+	font-weight: bold;
+	line-height: 140%;
+	letter-spacing: -0.5px;
+}
+
+.text-preset-6 {
+	font-weight: medium;
+	line-height: 100%;
+	letter-spacing: -0.2px;
+	font-size: 1rem;
+	font-family: var(--font-mono);
+}
+.text-preset-9 {
+	font-weight: 200;
+	line-height: 150%;
+		letter-spacing: -0.3px;
+		
+}
+
+p {
+	color: var(--paragraph-text);
+}
