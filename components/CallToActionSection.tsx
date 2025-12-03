@@ -15,7 +15,7 @@ const CallToActionSection = () => {
         <p className="text-preset-6 ">Hit the button, pick a recipe, and get dinner on the table—fast.</p>
       </div>
       <Image src={patternFork} alt="" className="hidden md:block absolute w-[171px] h-[233px] left-[-50px] -bottom-14  " />
-      <ButtonLink linkTo="" text="Browse recipes" />
+      <ButtonLink linkTo="/recipes" text="Browse recipes" />
     </div>
   )
 }
