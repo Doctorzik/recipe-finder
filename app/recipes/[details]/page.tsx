@@ -54,7 +54,7 @@ const RecipesDetails = async ({ params }: {
           </div>
         </div>
       </div>
-      <div>
+      <div className="space-y-10">
         <h2 className="text-preset-3">More Recipes</h2>
         <MoreReciepeCard />
       </div>

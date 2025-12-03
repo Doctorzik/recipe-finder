@@ -67,13 +67,13 @@ function NavBar() {
 
         </div>
       </nav>
-      <div className={open === "open" ? 'bg-white   flex flex-col gap-2 w-[96%] m-auto md:w-full lg:hidden max-w-[704px]  absolute' : 'hidden'}>
+      <div className={open === "open" ? 'bg-white   flex flex-col gap-2 w-[96%] m-auto md:w-full lg:hidden max-w-[704px]  relative' : 'hidden'}>
         <ul className='flex flex-col gap-2'>
           {
             navList.map(({ name, href, }) =>
             (<span key={name} className='relative'>
               <div className={path === href ? 'block absolute bg-orange-500 w-12 bottom-0 h-1' : 'hidden'}></div>
-              <li  className='bg-gray-100 '><Link href={href}>{name}</Link> </li>
+              <li><Link href={href}>{name}</Link> </li>
             </span>
             )
             )
@@ -81,7 +81,6 @@ function NavBar() {
         </ul>
         <div className=''>
           <ButtonLink linkTo='recipes' text='Browse Recipes' />
-
         </div>
       </div>
     </div>

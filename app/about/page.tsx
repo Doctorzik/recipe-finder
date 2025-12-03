@@ -83,7 +83,7 @@ export default function AboutPage() {
           <Image src={BeyondPlateImageLarge} alt="Beyond Plate Image" className="hidden lg:block" />
         </div>
       </div>
-      hehre
+
       <CallToActionSection />
     </div>
   )

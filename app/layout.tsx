@@ -28,11 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito_sans.variable} ${nunito.variable} antialiased`}
+        className={`${nunito_sans.variable} ${nunito.variable} antialiased  bg-[#E0E6E3]`}
       >
 
         <NavBar />
-        <div className="grid grid-cols-1 px-4 md:px-8 lg:px-24 gap-8">
+        <div className="grid grid-cols-1 px-4 md:px-8 lg:px-24 gap-8 ">
           {children}
 
           <Footer />

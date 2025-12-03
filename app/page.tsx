@@ -42,7 +42,7 @@ export default function Home() {
 
         <h2 className="lg:text-center sm:text-[30px] text-preset-2 ">What you&apos;ll get</h2>
 
-        <div className="flex flex-col lg:flex-row gap-6  justify-center">
+        <div className="flex flex-col lg:flex-row gap-6 space-y-8  justify-center">
 
           <FeatureCard alt="A Carrot for whole meal" headerText="Whole-food recipes" paragrahText="Each dish uses everyday, unprocessed ingredients." src={carrotIcon} />
           <FeatureCard alt="A minifuss Image Icon" headerText="Minimum fuss" paragrahText="All recipes are designed to make eating healthy quick and easy." src={minifussIcon} />
@@ -76,8 +76,6 @@ export default function Home() {
       </div>
       <div>
         <CallToActionSection />
-
-
       </div>
     </>
   );
