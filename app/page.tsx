@@ -33,7 +33,7 @@ export default function Home() {
         <motion.div
           initial={{ x: 500 }}
           animate={{ x: 0 }}
-          transition={{ ease: "easeOut", duration: 5, }}
+          transition={{ ease: "easeOut", duration: 2, }}
           className="picture">
           <Image src={heroImagelarge} alt="Hero Image" className="rounded-lg" />
         </motion.div>
