@@ -67,7 +67,7 @@ function NavBar() {
 
         </div>
       </nav>
-      <div className={open === "open" ? 'bg-white   flex flex-col gap-2 w-[96%] m-auto md:w-full lg:hidden max-w-[704px]  relative' : 'hidden'}>
+      <div className={open === "open" ? 'bg-white   flex flex-col gap-2 w-[96%] m-auto md:w-full lg:hidden max-w-[704px]  absolute z-10' : 'hidden'}>
         <ul className='flex flex-col gap-2'>
           {
             navList.map(({ name, href, }) =>
